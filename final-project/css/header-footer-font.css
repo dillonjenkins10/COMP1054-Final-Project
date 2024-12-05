@@ -1,0 +1,160 @@
+/*
+    Colours:
+    Nintendo Red: #E7000A
+    Snes blue: #A9AADD
+    Gamecube blue: #554A98
+    Switch Red: #FE463C
+
+    Fonts:
+    Space Grotesk (titles)
+    Commissioner (bodies)
+
+
+*/
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Space Grotesk", sans-serif;
+}
+
+p,a,button,li,input,textarea,figcaption{
+    font-family: "Commissioner", sans-serif;
+    text-decoration: none;
+}
+
+/* header styling */
+header{
+    height: 150px;
+    background-color: #E7000A;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+header div{
+    height: 100px;
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+header div img{
+    height: 100%;
+    width: auto;
+}
+
+/* Nav bar */
+.header-nav menu{
+    display: flex;
+    margin-right: 40px;
+}
+
+.header-nav menu li{
+    list-style: none;
+    padding: 4px 20px;
+    border-right: 2px solid;
+    border-color: #FFFFFF;
+    
+}
+
+.header-nav menu li:nth-child(3){
+    border-right: none;
+}
+
+.header-nav menu li a{
+    font-size: 20px;
+    color: #FFFFFF;
+    
+}
+
+/* footer styling */
+footer{
+    height: 250px;
+    background-color: #E7000A;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Logo */
+footer > div:nth-child(1){
+    height: 120px;
+    margin-left: 10px;
+}
+
+footer div img{
+    height: 100%;
+    width: auto;
+}
+
+/* footer nav */
+.footer-nav{
+    flex-grow: 1;
+    justify-self: center;
+    margin-left: 250px;
+}
+
+.footer-nav menu{
+    display: flex;
+}
+
+.footer-nav menu li{
+    list-style: none;
+    padding: 4px 20px;
+    border-right: 2px solid;
+    border-color: #FFFFFF;
+    
+}
+
+.footer-nav menu li:nth-child(2){
+    border-right: none;
+}
+
+.footer-nav menu li a{
+    font-size: 20px;
+    color: #FFFFFF;
+    
+}
+
+/* form */
+footer div:nth-child(3){
+    margin-right: 30px;
+}
+
+footer div form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* title */
+footer div form p:nth-child(1){
+    color: #FFFFFF;
+    font-size: 20;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+/* email */
+footer div form input{
+    border: none;
+    color: #929292;
+    background-color: #D9D9D9;
+    margin: 5px 0;
+    padding: 4px;
+}
+
+/* text */
+footer div form p textarea{
+    border: none;
+    color: #929292;
+    background-color: #D9D9D9;
+    margin: 5px 0;
+    padding: 4px;
+}
+
+/* submit button */
+footer div form input:last-child{
+    background-color: #646464;
+    color: #FFFFFF;
+    height: 32px;
+    width: 114px;
+    align-self: center;
+}

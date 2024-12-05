@@ -1,0 +1,221 @@
+/*
+    Colours:
+    Nintendo Red: #E7000A
+    Snes blue: #A9AADD
+    Gamecube blue: #554A98
+    Switch Red: #FE463C
+
+    Fonts:
+    Space Grotesk (titles)
+    Commissioner (bodies)
+
+
+*/
+
+/* masthead styling */
+.masthead{
+    display: flex;
+    background-image: url("../img/super-mario-3d-world-review.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.masthead div{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    color: #EF0816;
+    font-size: 64px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .7);
+    margin-top: 200px;
+    letter-spacing: 2px;
+}
+
+/* Products styling */
+.products{
+    height: 150px;
+    background-color: #E7000A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+/* snes section */
+.snes{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.snes div{
+    height: 100%;
+    background-color: #A9AADD;
+}
+
+/* image */
+.snes div:last-child{
+    background-image: url("../img/SNES-Mod1-Console-Set.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* text */
+.snes div:first-child{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.snes h4{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    color: #646464;
+}
+
+.snes p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #646464;
+    padding-left: 40px;
+    padding-right: 170px;
+    line-height: 35px;
+    margin-top: 25px;
+}
+
+/* button */
+.snes button{
+    height: 70px;
+    Width: 180px;
+    background-color: #FE463C;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: 525px;
+    margin-top: 50px;
+}
+
+/* gamecube section */
+.gamecube{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gamecube div{
+    height: 100%;
+    background-color: #554A98;
+}
+
+/* image */
+.gamecube div:first-child{
+    background-image: url("../img/GameCube-Set.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* text */
+.gamecube div:first-child{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gamecube h4{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.gamecube p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-left: 40px;
+    padding-right: 170px;
+    line-height: 35px;
+    margin-top: 25px;
+}
+
+/* button */
+.gamecube button{
+    height: 70px;
+    Width: 180px;
+    background-color: #A9AADD;
+    border: none;
+    font-size: 20px;
+    color: #646464;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+/* switch section */
+.nswitch{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nswitch div{
+    height: 100%;
+    background-color: #FE463C;
+}
+
+/* image */
+.nswitch div:last-child{
+    background-image: url("../img/Switch-Set.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* text */
+.nswitch div:first-child{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nswitch h4{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.nswitch p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-left: 40px;
+    padding-right: 170px;
+    line-height: 35px;
+    margin-top: 25px;
+}
+
+/* button */
+.nswitch button{
+    height: 70px;
+    Width: 180px;
+    background-color: #554A98;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: 525px;
+    margin-top: 30px;
+}

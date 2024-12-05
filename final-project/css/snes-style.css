@@ -1,0 +1,175 @@
+/*
+    Colours:
+    Nintendo Red: #E7000A
+    Snes blue: #A9AADD
+    Gamecube blue: #554A98
+    Switch Red: #FE463C
+    text on snes blue: #646464
+
+    Fonts:
+    Space Grotesk (titles)
+    Commissioner (bodies)
+*/
+
+/* Buttons (shape + borders) */
+button{
+    height: 70px;
+    width: 180px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Console name section */
+section:first-child{
+    background-color: #A9AADD;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 64px;
+    color: #646464;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .7);
+}
+
+/* image of the console */
+.console{
+    background-image: url("../img/SNES-Mod1-Console-Set.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* first description section */
+section:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 225px;
+    background-color: #9191bb;
+}
+
+section:nth-child(3) div{
+    margin: 0 375px;
+}
+
+section:nth-child(3) h3{
+    font-size: 38px;
+    font-weight: 500;
+    color: #484848;
+    margin: 25px;
+}
+
+section:nth-child(3) p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #484848;
+    line-height: 28px;
+}
+
+/* further description/box image section */
+section:nth-child(4){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 60vh;
+}
+
+section:nth-child(4) div:first-child{
+    background-image: url("../img/snes-box.png");
+    background-size: cover;
+    background-position: center;
+}
+
+section:nth-child(4) div:last-child{
+    background-color: #6d6e9b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(4) div p{
+    font-size: 24px;
+    font-weight: 500;
+    color: #3f3f3f;
+    line-height: 34px;
+    margin-left: -585px;
+    margin-top: 50px;
+}
+
+section:nth-child(4) div p:first-child{
+    margin: 0 170px;
+    margin-top: 60px;
+}
+
+section:nth-child(4) button{
+    background-color: #A9AADD;
+    color: #646464;
+    margin-left: -520px;
+    margin-top: 20px;
+}
+
+/* aside styling */
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a90008;
+}
+
+/* Title */
+aside article:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+aside h4{
+    font-size: 30px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+/* divs with links to other products */
+aside article:last-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 400px;
+    padding-bottom: 20px;
+}
+
+aside article div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 175px;
+    padding: 7px;
+    background-color: #c1000a;    
+}
+
+aside article div figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside article div figure img{
+    height: 200px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+aside article div figure figcaption{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+aside article div button{
+    background-color: #433b79;
+    color: #FFFFFF;
+}

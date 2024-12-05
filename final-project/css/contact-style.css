@@ -1,0 +1,120 @@
+/*
+    Colours:
+    Nintendo Red: #E7000A
+    Snes blue: #A9AADD
+    Gamecube blue: #554A98
+    Switch Red: #FE463C
+    text on snes blue: #646464
+
+    Fonts:
+    Space Grotesk (titles)
+    Commissioner (bodies)
+*/
+
+/* title section */
+section:first-child{
+    height: 150px;
+    background-color: #A9AADD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 48px;
+    color: #646464;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    font-weight: bold;
+}
+
+/* formatting the second section */
+section:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FE463C;
+    padding-bottom: 20px;
+}
+
+section div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* formatting contact info */
+section div:first-child p{
+    color: #FFFFFF;
+    border-right: solid 2px;
+    border-color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 150px;
+    margin: 15px 0;
+}
+
+section div:first-child p:last-child{
+    border: none;
+}
+
+/* formatting the form */
+section div:last-child{
+    padding: 20px;
+    background-color: #A9AADD;
+}
+
+section div form{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+                            "fname lname texta texta"
+                            "email email texta texta"
+                            "phone phone texta texta"
+                            "sbmit sbmit texta texta";
+}
+section form input{
+    margin: 2px;
+    padding: 5px;
+    border: none;
+}
+section form input[id="first-name"]{
+    grid-area: fname;
+    color: #929292;
+    background-color: #D9D9D9;
+}
+
+section form input[id="last-name"]{
+    grid-area: lname;
+    color: #929292;
+    background-color: #D9D9D9;
+}
+
+section form input[type="email"]{
+    grid-area: email;
+    color: #929292;
+    background-color: #D9D9D9;
+}
+
+section form input[type="tel"]{
+    grid-area: phone;
+    color: #929292;
+    background-color: #D9D9D9;
+}
+
+section form input[type="submit"]{
+    grid-area: sbmit;
+    background-color: #646464;
+    color: #FFFFFF;
+}
+
+section form textarea{
+    grid-area: texta;
+    color: #929292;
+    background-color: #D9D9D9;
+    margin-left: -110px;
+    margin-top: -34px;
+    padding: 5px;
+    border: none;
+}

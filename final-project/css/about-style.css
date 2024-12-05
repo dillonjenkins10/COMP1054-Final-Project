@@ -1,0 +1,232 @@
+/*
+    Colours:
+    Nintendo Red: #E7000A
+    Snes blue: #A9AADD
+    Gamecube blue: #554A98
+    Switch Red: #FE463C
+    text on snes blue: #646464
+
+    Fonts:
+    Space Grotesk (titles)
+    Commissioner (bodies)
+*/
+
+/* title */
+section:first-child{
+    height: 150px;
+    background-color: #554A98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .7);
+}
+
+/* history */
+/* first section */
+.og-hq{
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.og-hq div:first-child{
+    background-image: url("../img/original-nintendo-hq.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.og-hq div:first-child p{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 25px;
+    color: #FFFFFF;
+    line-height: 100px;
+}
+
+.og-hq div:last-child{
+    height: 25vh;
+    background-color: #FE463C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.og-hq div:last-child h3{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.og-hq div:last-child p{
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    margin: 0 350px;
+}
+
+/* playing card section */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70vh;
+}
+
+.cards div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    background-color: #A9AADD;
+}
+
+.cards div:last-child{
+    background-image: url("../img/nintendo-cards.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* playing card text */
+.cards div:first-child p{
+    color: #646464;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+/* Love tester section */
+.toys{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70vh;
+}
+
+.toys div:first-child{
+    background-image: url("../img/love-tester.JPG");
+    background-position: center;
+    background-size: cover;
+}
+
+.toys div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    background-color: #E7000A;
+}
+
+/* toys text */
+.toys div:last-child p{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+/* game n watch section */
+.game-n-watch{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70vh;
+}
+
+.game-n-watch div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    background-color: #554A98;
+}
+
+.game-n-watch div:last-child{
+    background-image: url("../img/game-n-watch.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* game n watch text */
+.game-n-watch div:first-child p{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+/* home console section */
+.home-console{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70vh;
+}
+
+.home-console div:first-child{
+    background-image: url("../img/nes.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-console div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    background-color: #FE463C;
+}
+
+/* home console text */
+.home-console div:last-child p{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+/* modern day section */
+.modern{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modern div:first-child{
+    background-image: url("../img/nintendo-headquarters.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.modern h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    font-size: 40px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .7);
+}
+
+.modern div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A9AADD;
+    height: 25vh;
+}
+
+.modern div:last-child p{
+    color: #646464;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0 300px;
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is the Contact page for my final Project">
+        <title>Contact</title>
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/header-footer-font.css">
+        <link rel="stylesheet" href="./css/contact-style.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </head>
+</html>
+
+<body>
+    <header id="header"></header>
+
+    <main>
+        <!-- Title section -->
+        <section>
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-- This section will contain a form where a user can input their information and what they want to contact about -->
+        <section>
+            <!-- Small div with support email and help phone number -->
+            <div>
+                <p>Customer Service Email: nintendo@noa.nintendo.com</p>
+                <p>Customer Service Number: 1 (800) 255-3700</p>
+            </div>
+
+            <!-- form section -->
+            <!-- Will look like this
+
+                fname lname texta texta
+                email email texta texta
+                phone phone texta texta
+                sbmit sbmit texta texta
+            
+                sbmit = submit
+                texta = text area
+            -->
+            <div>
+                <form action="somephpfile" method="post" enctype="multipart/form-data">
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                    <br>
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                    <br>
+                    <input type="email" name="contact-email" id="contact-email" placeholder="Email" required>
+                    <br>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone: 123-456-7890" required>
+                    <p><textarea name="contactText" id="contactText" placeholder="Your message here..."  rows="5" cols="28"></textarea></p>
+                    <br>
+                    <input type="submit" name="contact-submit" id="contact-submit" value="Send">
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="footer"></footer>
+</body>
